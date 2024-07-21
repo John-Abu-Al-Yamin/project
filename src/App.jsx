@@ -12,6 +12,7 @@ import Personal from "./pages/Personal/Personal";
 import Auth from "./pages/auth/Auth";
 import { ToastContainer } from "react-toastify";
 import Sidebar from "./pages/Sidebar/Sidebar";
+import Cards from "./pages/Cards/Cards";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/sidebar" element={<Sidebar />} />
+          <Route path="/card" element={<Cards />} />
         </Routes>
       </div>
       <Footer />

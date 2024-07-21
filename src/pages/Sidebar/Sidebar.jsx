@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col sm:flex-row gap-6">
+    <div className="flex flex-col sm:flex-row gap-6 ">
       <aside
         id="default-sidebar"
         className="hidden sm:block z-40 w-64 h-[calc(100vh-64px)] transition-transform -translate-x-full sm:translate-x-0"
@@ -23,10 +24,7 @@ const Sidebar = () => {
                 href="#"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
-                <span className="flex-1 ms-3 whitespace-nowrap">BoLLETTNI</span>
-                <span className="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
-                  Pro
-                </span>
+                <span className="flex-1 ms-3 whitespace-nowrap">BOLLETTNI</span>
               </a>
             </li>
             <li>
@@ -35,10 +33,7 @@ const Sidebar = () => {
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
-                  PROVER INTERMEDIE
-                </span>
-                <span className="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">
-                  3
+                  PROVE INTERMEDIE
                 </span>
               </a>
             </li>
@@ -47,9 +42,9 @@ const Sidebar = () => {
                 href="#"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
-                <span className="flex-1 ms-3 whitespace-nowrap">
-                  PERCOR SO FORMA
-                </span>
+                <Link to="/card" className="flex-1 ms-3 whitespace-nowrap">
+                  ESAMI REGISTRATI
+                </Link>
               </a>
             </li>
             <li>
@@ -81,8 +76,8 @@ const Sidebar = () => {
           </ul>
         </div>
       </aside>
-      <div className="flex-1">
-        <div className="my-6 mr-6">
+      <div className="flex-1 ">
+        <div className="my-6 ">
           <a
             href="#"
             className="flex items-center gap-6 text-white max-w-sm p-6 bg-gray-600  border border-gray-200 rounded-lg shadow hover:bg-gray-500 "
@@ -90,18 +85,9 @@ const Sidebar = () => {
             <h5 className="text-white mb-2 text-2xl font-bold tracking-tight  ">
               ESAMI SOSTENIBILI TROVATI
             </h5>
-            <p className="text-white font-bold text-2xl ">
-              1
-            </p>
+            <p className="text-white font-bold text-2xl ">1</p>
           </a>
         </div>
-
-        <p className="my-5 text-left rtl:text-right text-gray-500 dark:text-gray-400 border-2 border-red-800 p-4">
-          Get started with an enterprise-level, professionally designed, fully
-          responsive, and HTML semantic set of web pages, sections and over 400+
-          components crafted with the utility classes from Tailwind CSS and
-          based on the Flowbite component library.
-        </p>
 
         <p className="my-2">
           Esami non ancora sostenuti previsti dal tuo percorso
